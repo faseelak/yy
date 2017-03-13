@@ -1,0 +1,12 @@
+<ul style="list-style-type: none">
+<li ng-repeat="t in $ctrl.selectedalbum" style="display:inline">
+<img ng-src=t alt="" /></li>
+</ul>
+
+<ul style="list-style-type: none">
+<li ng-repeat="album in $ctrl.albums">
+    <albumlistitem-component album="album" show-album="$ctrl.showAlbum({albumListObj:albullistitemObj})" selectedalbum="$ctrl.selectedalbum"></albumlistitem-component>
+
+</li>
+
+</ul>
